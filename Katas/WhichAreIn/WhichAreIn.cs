@@ -17,6 +17,21 @@ namespace Katas
                     if (comparer.IndexOf(item) > -1 && result.Contains(item) == false ) result.Add(item);
                 }
             }
+            bool swap = true;
+            while (swap)
+            {
+                swap = false;
+                for (int i = 0; i < result.Count-1; i++)
+                {
+                    if (String.Compare(result[i+1], result[i ]) < 0)
+                    {
+                        swap = true;
+                        string temp = result[i];
+                        result[i] = result[i + 1];
+                        result[i + 1] = temp;
+                    }
+                }
+            }
             return result.ToArray();
         }
     }

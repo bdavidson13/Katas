@@ -52,5 +52,12 @@ Note: Arrays are written in "general" notation. See "Your Test Cases" for exampl
             string[] result = wai.GetLexOrderedArray(new String[] { "arp", "mice", "bull" }, new String[] { "lively", "alive", "harp", "sharp", "armstrong" });
             Assert.AreEqual(1, result.Length);
         }
+        [TestMethod]
+        public void GetLexOrderedArray_GivenMatches_ReturnsMatchesInOrder()
+        {
+            string[] result = wai.GetLexOrderedArray(new String[] { "live", "strong", "arp" }, new String[] { "lively", "alive", "harp", "sharp", "armstrong" });
+            Assert.IsTrue(result[0] == "arp"&&result[1]=="live"&&result[2]=="strong",
+                String.Format("Expect : arp,live,strong. Actual : {0},{1},{2}",result[0],result[1],result[2]));
+        }
     }
 }
