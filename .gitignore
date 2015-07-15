@@ -4,3 +4,5 @@
 /Katas/obj
 /*.userprefs
 /*.suo
+/Katas.test/obj
+/Katas.test/bin
