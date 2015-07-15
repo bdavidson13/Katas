@@ -10,7 +10,13 @@ namespace Katas
         public string[] GetLexOrderedArray(string[] p1, string[] p2)
         {
             List<String> result = new List<string>();
-            result.Add("pass");
+            foreach (var item in p1)
+            {
+                foreach (var comparer in p2)
+                {
+                    if (comparer.IndexOf(item) > -1) result.Add(item);
+                }
+            }
             return result.ToArray();
         }
     }
