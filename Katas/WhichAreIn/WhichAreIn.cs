@@ -14,7 +14,7 @@ namespace Katas
             {
                 foreach (var comparer in p2)
                 {
-                    if (comparer.IndexOf(item) > -1) result.Add(item);
+                    if (comparer.IndexOf(item) > -1 && result.Contains(item) == false ) result.Add(item);
                 }
             }
             return result.ToArray();
