@@ -17,6 +17,11 @@ namespace Katas
                     sb.Append('a');
                     continue;
                 }
+                if (char.IsNumber(item))
+                {
+                    sb.Append((9 - int.Parse(item.ToString())));
+                    continue;
+                }
                 if (char.IsLetter(item))
                 {
                     sb.Append((char)(item + shift));

@@ -47,7 +47,7 @@ namespace Kata
         {
             int shift = 1;
             var result = passPhrase.CreateNewPhrase(phrase, shift);
-            Assert.AreEqual("CPSO JO 2015!", result);
+            Assert.AreEqual("CPSO JO 7984!", result);
         }
         [TestMethod]
         public void CreateNewPhrase_PassInStringAndAShiftOfThree_ShiftsAllLettersby3()
