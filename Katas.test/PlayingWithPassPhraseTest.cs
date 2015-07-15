@@ -42,12 +42,12 @@ namespace Kata
             var result = passPhrase.CreateNewPhrase(phrase, shift);
             Assert.IsTrue(!String.IsNullOrEmpty(result));
         }
-        [TestMethod][ IgnoreAttribute]
+        [TestMethod]
         public void CreateNewPhrase_PassInStringAndAShiftOfOne_ShiftsAllLettersby1()
         {
             int shift = 1;
             var result = passPhrase.CreateNewPhrase(phrase, shift);
-            Assert.AreEqual(result,"CPSO JO 2015!");
+            Assert.AreEqual("CPSO JO 2015!", result);
         }
         [TestMethod]
         public void IsAlphabetic_GivenALowerCaseAlphbetChar_ReturnsTrue()

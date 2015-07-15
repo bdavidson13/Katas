@@ -9,7 +9,19 @@ namespace Katas
     {
         public String CreateNewPhrase(string phrase, int shift)
         {
-            return phrase;
+            StringBuilder sb = new StringBuilder();
+            foreach (char item in phrase)
+            {
+                if (IsAlphabetic(item))
+                {
+                    sb.Append((char)(item + 1));
+                }
+                else
+                {
+                    sb.Append(item);
+                }
+            }
+            return sb.ToString();
         }
 
         public bool IsAlphabetic(char asciiCode)
