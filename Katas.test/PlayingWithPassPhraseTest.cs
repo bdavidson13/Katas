@@ -42,7 +42,7 @@ namespace Kata
             var result = passPhrase.CreateNewPhrase(phrase, shift);
             Assert.IsTrue(!String.IsNullOrEmpty(result));
         }
-        [TestMethod]
+        [TestMethod][ IgnoreAttribute]
         public void CreateNewPhrase_PassInStringAndAShiftOfOne_ShiftsAllLettersby1()
         {
             int shift = 1;
@@ -54,6 +54,26 @@ namespace Kata
         {
             var result = passPhrase.IsAlphabetic('a');
             Assert.IsTrue(result);
+        }
+        public void IsAlphabetic_GivenAnUpperCaseAlphbetChar_ReturnsTrue()
+        {
+            var result = passPhrase.IsAlphabetic('X');
+            Assert.IsTrue(result);
+        }
+        public void IsAlphabetic_GivenANumberChar_ReturnsFalse()
+        {
+            var result = passPhrase.IsAlphabetic('6');
+            Assert.IsFalse(result);
+        }
+        public void IsAlphabetic_GivenANonAlphaNumericChar_ReturnsFalse()
+        {
+            var result = passPhrase.IsAlphabetic('%');
+            Assert.IsFalse(result);
+        }
+        public void IsAlphabetic_GivenASpaceChar_ReturnsFalse()
+        {
+            var result = passPhrase.IsAlphabetic(' ');
+            Assert.IsFalse(result);
         }
     }
 }
