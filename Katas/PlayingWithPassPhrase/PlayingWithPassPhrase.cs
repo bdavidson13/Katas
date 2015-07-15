@@ -14,7 +14,7 @@ namespace Katas
             {
                 if (char.IsLetter(item))
                 {
-                    sb.Append((char)(item + 1));
+                    sb.Append((char)(item + shift));
                 }
                 else
                 {

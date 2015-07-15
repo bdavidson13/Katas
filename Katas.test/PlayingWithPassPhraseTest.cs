@@ -55,7 +55,7 @@ namespace Kata
             int shift = 3;
             phrase = "abc";
             var result = passPhrase.CreateNewPhrase(phrase, shift);
-            Assert.AreEqual("cde", result);
+            Assert.AreEqual("def", result);
         }
         
     }
