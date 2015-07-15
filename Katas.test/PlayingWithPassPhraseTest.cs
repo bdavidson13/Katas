@@ -25,5 +25,11 @@ namespace Kata
      With longer passphrases it's better to have a small and easy program. Would you write it?
      https://en.wikipedia.org/wiki/Passphrase
         */
+
+        [TestMethod]
+        public void createPlayingWithPassPhraseObject()
+        {
+            PlayingWithPassPhrase passPhrase = new PlayingWithPassPhrase();
+        }
     }
 }
