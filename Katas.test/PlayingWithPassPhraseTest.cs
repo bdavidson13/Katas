@@ -49,5 +49,11 @@ namespace Kata
             var result = passPhrase.CreateNewPhrase(phrase, shift);
             Assert.AreEqual(result,"CPSO JO 2015!");
         }
+        [TestMethod]
+        public void IsAlphabetic_GivenALowerCaseAlphbetChar_ReturnsTrue()
+        {
+            var result = passPhrase.IsAlphabetic('a');
+            Assert.IsTrue(result);
+        }
     }
 }

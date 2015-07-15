@@ -11,5 +11,10 @@ namespace Katas
         {
             return phrase;
         }
+
+        public bool IsAlphabetic(char p)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
