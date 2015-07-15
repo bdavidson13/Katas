@@ -46,5 +46,11 @@ Note: Arrays are written in "general" notation. See "Your Test Cases" for exampl
             string[] result = wai.GetLexOrderedArray(new String[] { "arp", "mice", "bull" }, new String[] { "lively", "alive", "harp", "sharp", "armstrong" });
             Assert.AreEqual(result[0], "arp");
         }
+        [TestMethod]
+        public void GetLexOrderedArray_GivenOneMatch_ReturnsMatchWithNoDuplicates()
+        {
+            string[] result = wai.GetLexOrderedArray(new String[] { "arp", "mice", "bull" }, new String[] { "lively", "alive", "harp", "sharp", "armstrong" });
+            Assert.AreEqual(1, result.Length);
+        }
     }
 }
