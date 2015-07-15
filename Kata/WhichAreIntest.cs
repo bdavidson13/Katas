@@ -35,6 +35,7 @@ Note: Arrays are written in "general" notation. See "Your Test Cases" for exampl
         {
             wai = new WhichAreIn();
             string [] result = wai.GetLexOrderedArray(new String[]{"arp", "mice", "bull"},new String[]{"lively", "alive", "harp", "sharp", "armstrong"});
+            Assert.AreEqual(1, result.Length);
         }
     }
 }
