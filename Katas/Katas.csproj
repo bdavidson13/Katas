@@ -41,6 +41,7 @@
   <ItemGroup>
     <Compile Include="GreedIsGood\DiceGame.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WhichAreIn\WhichAreIn.cs" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
