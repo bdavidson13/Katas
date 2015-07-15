@@ -3,7 +3,8 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace Kata
 {
-    class PlayingWithPassPhraseTest
+    [TestClass]
+    public class PlayingWithPassPhraseTest
     {
     /*
      Everyone knows passphrases. One can choose passphrases from poems, songs, movies names and so on but frequently they can be guessed due to common 
