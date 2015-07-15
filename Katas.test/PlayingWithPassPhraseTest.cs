@@ -55,7 +55,7 @@ namespace Kata
             int shift = 3;
             phrase = "abc";
             var result = passPhrase.CreateNewPhrase(phrase, shift);
-            Assert.AreEqual("DeF", result);
+            Assert.IsTrue(String.Equals("def", result,StringComparison.CurrentCultureIgnoreCase));
         }
         [TestMethod]
         public void CreateNewPhrase_PassInLetterZAndAShiftOfOne_ReturnsA()
