@@ -59,5 +59,11 @@ Note: Arrays are written in "general" notation. See "Your Test Cases" for exampl
             Assert.IsTrue(result[0] == "arp"&&result[1]=="live"&&result[2]=="strong",
                 String.Format("Expect : arp,live,strong. Actual : {0},{1},{2}",result[0],result[1],result[2]));
         }
+        [TestMethod]
+        public void GetLexOrderedArray_GivenNoMatches_ReturnsEmptyArray()
+        {
+            string[] result = wai.GetLexOrderedArray(new String[] { "tarp", "mice", "bull" }, new String[] { "lively", "alive", "harp", "armstrong" });
+            Assert.AreEqual(0, result.Length);
+        }
     }
 }
