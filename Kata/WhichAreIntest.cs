@@ -30,15 +30,21 @@ Note: Arrays are written in "general" notation. See "Your Test Cases" for exampl
     {
         private WhichAreIn wai { get; set; } 
         [TestInitialize]
-        private void setup()
+        public void setup()
         {
             wai = new WhichAreIn();
         }
         [TestMethod]
-        public void GetLexOrderedArray_GivenOneMatch_ReturnsMatch()
+        public void GetLexOrderedArray_GivenOneMatch_ReturnsAnArrayWithOneElement()
         {
             string [] result = wai.GetLexOrderedArray(new String[]{"arp", "mice", "bull"},new String[]{"lively", "alive", "harp", "sharp", "armstrong"});
             Assert.AreEqual(1, result.Length);
+        }
+        [TestMethod]
+        public void GetLexOrderedArray_GivenOneMatch_ReturnsMatch()
+        {
+            string[] result = wai.GetLexOrderedArray(new String[] { "arp", "mice", "bull" }, new String[] { "lively", "alive", "harp", "sharp", "armstrong" });
+            Assert.AreEqual(result[0], "arp");
         }
     }
 }
