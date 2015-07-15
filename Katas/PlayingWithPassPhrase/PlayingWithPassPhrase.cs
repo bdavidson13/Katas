@@ -12,7 +12,7 @@ namespace Katas
             StringBuilder sb = new StringBuilder();
             foreach (char item in phrase)
             {
-                if (IsAlphabetic(item))
+                if (char.IsLetter(item))
                 {
                     sb.Append((char)(item + 1));
                 }
@@ -24,9 +24,5 @@ namespace Katas
             return sb.ToString();
         }
 
-        public bool IsAlphabetic(char asciiCode)
-        {
-            return (asciiCode >= 65 && asciiCode <= 90) || (asciiCode >= 97 && asciiCode <= 122);
-        }
     }
 }
