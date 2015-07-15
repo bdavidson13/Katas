@@ -57,6 +57,13 @@ namespace Kata
             var result = passPhrase.CreateNewPhrase(phrase, shift);
             Assert.AreEqual("def", result);
         }
-        
+        [TestMethod]
+        public void CreateNewPhrase_PassInLetterZAndAShiftOfOne_ReturnsA()
+        {
+            int shift = 1;
+            phrase = "z";
+            var result = passPhrase.CreateNewPhrase(phrase, shift);
+            Assert.AreEqual("a", result);
+        }
     }
 }
