@@ -37,7 +37,7 @@ Note: Arrays are written in "general" notation. See "Your Test Cases" for exampl
         [TestMethod]
         public void GetLexOrderedArray_GivenOneMatch_ReturnsAnArrayWithOneElement()
         {
-            string [] result = wai.GetLexOrderedArray(new String[]{"arp", "mice", "bull"},new String[]{"lively", "alive", "harp", "sharp", "armstrong"});
+            string [] result = wai.GetLexOrderedArray(new String[]{"arp", "mice", "bull"},new String[]{"lively", "alive", "harp",  "armstrong"});
             Assert.AreEqual(1, result.Length);
         }
         [TestMethod]
