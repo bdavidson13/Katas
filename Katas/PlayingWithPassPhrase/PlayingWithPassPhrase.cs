@@ -12,9 +12,9 @@ namespace Katas
             return phrase;
         }
 
-        public bool IsAlphabetic(char p)
+        public bool IsAlphabetic(char asciiCode)
         {
-            throw new NotImplementedException();
+            return (asciiCode >= 65 && asciiCode <= 90) || (asciiCode >= 97 && asciiCode <= 122);
         }
     }
 }
