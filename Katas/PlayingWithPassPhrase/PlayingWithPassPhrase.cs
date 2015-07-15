@@ -12,6 +12,11 @@ namespace Katas
             StringBuilder sb = new StringBuilder();
             foreach (char item in phrase)
             {
+                if (item == 'z')
+                {
+                    sb.Append('a');
+                    continue;
+                }
                 if (char.IsLetter(item))
                 {
                     sb.Append((char)(item + shift));
