@@ -9,9 +9,9 @@ namespace Katas
     {
         public string[] GetLexOrderedArray(string[] p1, string[] p2)
         {
-            string[] result = new string[1];
-            result[0] = "pass";
-            return result;
+            List<String> result = new List<string>();
+            result.Add("pass");
+            return result.ToArray();
         }
     }
 }
