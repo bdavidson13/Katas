@@ -27,10 +27,20 @@ namespace Kata
      https://en.wikipedia.org/wiki/Passphrase
         */
         private PlayingWithPassPhrase passPhrase { get; set; }
+        private String phrase { get; set; }
         [TestInitialize]
         public void Setup()
         {
             passPhrase = new PlayingWithPassPhrase();
+            phrase = "BORN IN 2015!";
+        }
+
+        [TestMethod]
+        public void CreateNewPhrase_PassInStringAndInt_ReturnsAString()
+        {
+            int shift = 1;
+            var result = passPhrase.CreateNewPhrase(phrase, shift);
+            Assert.IsTrue(!String.IsNullOrEmpty(result));
         }
     }
 }
