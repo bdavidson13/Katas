@@ -43,6 +43,13 @@ namespace Kata
             Assert.IsTrue(!String.IsNullOrEmpty(result));
         }
         [TestMethod]
+        public void CreateNewPhrase_PassInStringAndAShiftOfOne_ShiftsAllLettersby1()
+        {
+            int shift = 1;
+            var result = passPhrase.CreateNewPhrase(phrase, shift);
+            Assert.IsTrue(String.Equals("CPSO JO 7984!", result,StringComparison.CurrentCultureIgnoreCase));
+        }
+        [TestMethod]
         public void CreateNewPhrase_PassInStringAndAShiftOfThree_ShiftsAllLettersby3()
         {
             int shift = 3;
