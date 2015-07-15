@@ -92,6 +92,13 @@ namespace Kata
             int score = game.GetScore(dice);
             Assert.AreEqual(score, 600, String.Format("score should be 600 but is {0}", score));
         }
+        [TestMethod]
+        public void GetScore_PassedArrayWithNoThreeOfAKindAndNoOnesOrFives_ScoreShouldBe0()
+        {
+            setDice(new int[] { 6, 4, 6, 4, 3});
+            int score = game.GetScore(dice);
+            Assert.AreEqual(score, 0, String.Format("score should be 0 but is {0}", score));
+        }
         private void setDice(int[] p_dice ) 
         {
             dice = p_dice;
