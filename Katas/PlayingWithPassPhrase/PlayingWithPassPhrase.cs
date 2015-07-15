@@ -9,26 +9,28 @@ namespace Katas
     {
         public String CreateNewPhrase(string phrase, int shift)
         {
+            phrase = phrase.ToLower();
             StringBuilder sb = new StringBuilder();
-            foreach (char item in phrase)
+            for (int i = 0; i < phrase.Length;i++ )
             {
-                if (item == 'z')
+                if (phrase[i] == 'z')
                 {
-                    sb.Append('a');
+                    sb.Append((i+1)%2 == 0?'a':'A');
                     continue;
                 }
-                if (char.IsNumber(item))
+                if (char.IsNumber(phrase[i]))
                 {
-                    sb.Append((9 - int.Parse(item.ToString())));
+                    sb.Append((9 - int.Parse(phrase[i].ToString())));
                     continue;
                 }
-                if (char.IsLetter(item))
+                if (char.IsLetter(phrase[i]))
                 {
-                    sb.Append((char)(item + shift));
+                    char newChar = (char)(phrase[i] + shift) ;
+                    sb.Append((i + 1) % 2 == 0 ? newChar.ToString() : newChar.ToString().ToUpper());
                 }
                 else
                 {
-                    sb.Append(item);
+                    sb.Append(phrase[i]);
                 }
             }
             return sb.ToString();

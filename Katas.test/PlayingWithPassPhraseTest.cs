@@ -43,19 +43,12 @@ namespace Kata
             Assert.IsTrue(!String.IsNullOrEmpty(result));
         }
         [TestMethod]
-        public void CreateNewPhrase_PassInStringAndAShiftOfOne_ShiftsAllLettersby1()
-        {
-            int shift = 1;
-            var result = passPhrase.CreateNewPhrase(phrase, shift);
-            Assert.AreEqual("CPSO JO 7984!", result);
-        }
-        [TestMethod]
         public void CreateNewPhrase_PassInStringAndAShiftOfThree_ShiftsAllLettersby3()
         {
             int shift = 3;
             phrase = "abc";
             var result = passPhrase.CreateNewPhrase(phrase, shift);
-            Assert.AreEqual("def", result);
+            Assert.AreEqual("DeF", result);
         }
         [TestMethod]
         public void CreateNewPhrase_PassInLetterZAndAShiftOfOne_ReturnsA()
@@ -63,7 +56,7 @@ namespace Kata
             int shift = 1;
             phrase = "z";
             var result = passPhrase.CreateNewPhrase(phrase, shift);
-            Assert.AreEqual("a", result);
+            Assert.IsTrue(String.Equals("a",result,StringComparison.CurrentCultureIgnoreCase));
         }
         [TestMethod]
         public void CreateNewPhrase_PassInStringOf5_Returns4()
@@ -72,6 +65,13 @@ namespace Kata
             phrase = "5";
             var result = passPhrase.CreateNewPhrase(phrase, shift);
             Assert.AreEqual("4", result);
+        }
+        [TestMethod]
+        public void CreateNewPhrase_PassInStringAndShiftOne_ReturnsStringWithOddIndexCapitalized()
+        {
+            int shift = 1;
+            var result = passPhrase.CreateNewPhrase(phrase, shift);
+            Assert.AreEqual("CpSo jO 7984!", result);
         }
     }
 }
