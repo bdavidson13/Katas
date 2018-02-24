@@ -1,0 +1,7 @@
+/home/bdavidson/projects/Katas/fsharp/ShortestWord/bin/Debug/netcoreapp2.0/ShortestWord.deps.json
+/home/bdavidson/projects/Katas/fsharp/ShortestWord/bin/Debug/netcoreapp2.0/ShortestWord.runtimeconfig.json
+/home/bdavidson/projects/Katas/fsharp/ShortestWord/bin/Debug/netcoreapp2.0/ShortestWord.runtimeconfig.dev.json
+/home/bdavidson/projects/Katas/fsharp/ShortestWord/bin/Debug/netcoreapp2.0/ShortestWord.dll
+/home/bdavidson/projects/Katas/fsharp/ShortestWord/bin/Debug/netcoreapp2.0/ShortestWord.pdb
+/home/bdavidson/projects/Katas/fsharp/ShortestWord/obj/Debug/netcoreapp2.0/ShortestWord.dll
+/home/bdavidson/projects/Katas/fsharp/ShortestWord/obj/Debug/netcoreapp2.0/ShortestWord.pdb
