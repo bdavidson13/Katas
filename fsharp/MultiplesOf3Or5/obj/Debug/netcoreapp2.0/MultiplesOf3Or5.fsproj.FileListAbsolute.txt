@@ -1,0 +1,8 @@
+C:\projects\Katas\fsharp\MultiplesOf3Or5\bin\Debug\netcoreapp2.0\MultiplesOf3Or5.deps.json
+C:\projects\Katas\fsharp\MultiplesOf3Or5\bin\Debug\netcoreapp2.0\MultiplesOf3Or5.runtimeconfig.json
+C:\projects\Katas\fsharp\MultiplesOf3Or5\bin\Debug\netcoreapp2.0\MultiplesOf3Or5.runtimeconfig.dev.json
+C:\projects\Katas\fsharp\MultiplesOf3Or5\bin\Debug\netcoreapp2.0\MultiplesOf3Or5.dll
+C:\projects\Katas\fsharp\MultiplesOf3Or5\bin\Debug\netcoreapp2.0\MultiplesOf3Or5.pdb
+C:\projects\Katas\fsharp\MultiplesOf3Or5\obj\Debug\netcoreapp2.0\MultiplesOf3Or5.fsprojResolveAssemblyReference.cache
+C:\projects\Katas\fsharp\MultiplesOf3Or5\obj\Debug\netcoreapp2.0\MultiplesOf3Or5.dll
+C:\projects\Katas\fsharp\MultiplesOf3Or5\obj\Debug\netcoreapp2.0\MultiplesOf3Or5.pdb
